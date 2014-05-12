@@ -6,24 +6,4 @@ export MXM_DIR=/opt/mellanox/mxm
 
     export HCOLL_DIR=/opt/mellanox/hcoll 
 
-CC=`which gcc` CXX=`which g++` ./configure --prefix=${PREFIX} \
-
-                                          --enable-mpi-thread-multiple \
-
-                                          --with-sge \
-
-                                          --disable-mpi-interface-warning \
-
-                                          --enable-mpirun-prefix-by-default \
-
-                                          --with-openib \
-
-                                          --with-ibverbs \
-
-                                          --with-hcoll=$HCOLL_DIR \
-
-                                          --with-fca=$FCA_DIR \
-
-                                          --with-mxm=$MXM_DIR \
-
-                                          --with-knem=$KNEM_DIR
+CC=`which gcc` CXX=`which g++` ./configure --prefix=${PREFIX} --enable-mpi-thread-multiple --with-sge --disable-mpi-interface-warning --enable-mpirun-prefix-by-default --with-openib --with-ibverbs --with-hcoll=$HCOLL_DIR --with-fca=$FCA_DIR --with-mxm=$MXM_DIR --with-knem=$KNEM_DIR
