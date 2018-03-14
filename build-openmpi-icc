@@ -6,4 +6,4 @@ export MXM_DIR=/opt/mellanox/mxm
 
     export HCOLL_DIR=/opt/mellanox/hcoll 
 
- ./configure CC=icc CXX=icpc F77=ifort FC=ifort --prefix=${PREFIX} --enable-mpi-thread-multiple --with-sge  --with-slurm --with-pmi --disable-mpi-interface-warning --enable-mpirun-prefix-by-default --with-openib --with-verbs --with-hcoll=$HCOLL_DIR --with-fca=$FCA_DIR --with-mxm=$MXM_DIR --with-knem=$KNEM_DIR
+ ./configure CC=icc CXX=icpc F77=ifort FC=ifort --prefix=${PREFIX} --enable-mpi-thread-multiple --with-slurm --with-pmi=/opt/local/slurm/default --disable-mpi-interface-warning --enable-mpirun-prefix-by-default --with-openib --with-verbs --with-hcoll=$HCOLL_DIR --with-fca=$FCA_DIR --with-mxm=$MXM_DIR --with-knem=$KNEM_DIR
